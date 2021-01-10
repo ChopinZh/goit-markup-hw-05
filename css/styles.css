@@ -111,6 +111,16 @@ img{
     letter-spacing: 0.03em;
 }
 
+.navigation-text:hover,
+.navigation-text:focus,
+.email-header:focus,
+.email-header:hover,
+.phone-header:focus,
+.phone-header:hover{
+    color: var(--color-accent);
+}
+
+
 .email-header,
 .phone-header{
     color:var(--secondary-color);
@@ -127,8 +137,6 @@ img{
     color: var(--link-color);
     align-items: center;
     display: flex;
-    transition: color 250ms var(--timing-function);
-
 }
 
 
@@ -141,22 +149,31 @@ img{
     color: var(--color-accent);
  }
 
- .contacts-header-item:hover .header-tel-icon,
+
+ /*.contacts-header-item:hover .header-tel-icon,
  .contacts-header-item:focus .header-tel-icon,
  .contacts-header-item:hover .header-mail-icon,
  .contacts-header-item:focus .header-mail-icon{
    fill:currentColor;
- }
+ }*/
 
+ .header-tel-icon,
+ .header-tel-icon,
+ .header-mail-icon,
+ .header-mail-icon{
+   fill:currentColor;
+ }
+ 
  .current{
      color: #2196F3;
  }
 
-.header-mail-icon,
+.header-mail-icon{
+    margin-right:10px;
+}
+
 .header-tel-icon{
     margin-right: 10px;
-    transition: fill 250ms var(--timing-function);
-
 }
 
 
@@ -273,6 +290,7 @@ img{
     background-position:center;
     background-repeat:no-repeat;
     background-color:#f5f4fa;
+    margin-bottom: 30px;
 }
 
 .icon-antenna::before{
@@ -313,7 +331,6 @@ img{
     color:var(--main-color);
     letter-spacing: 0.03em;
     margin-bottom:10px;
-    margin-top: 30px;
 }
 .service-item-description{
     font-family: var(--main-font);
@@ -631,9 +648,11 @@ img{
 }
 
 
-.button-name:hover{
+.button-name:hover,
+.button-name:focus{
     background-color:var(--color-accent);
     color:#FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
  
 .project-name{
