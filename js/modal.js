@@ -1,4 +1,3 @@
-
 (() => {
     const refs = {
       openModalBtn: document.querySelector('[data-modal-open]'),
@@ -13,11 +12,3 @@
       refs.modal.classList.toggle('is-hidden');
     }
   })();
-
-
-  <body>
-  <!-- Вся твоя разметка, включая разметку модалки -->
-
-  <!-- Ставим перед закрывающим тегом body -->
-  <script src="./js/modal.js"></script>
-</body>
