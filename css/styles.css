@@ -522,19 +522,13 @@ img {
 }
 
 .client-list-icon {
-  display: block;
-  fill: currentColor;
+  fill: var(--icon-color);
   transition: fill 250ms var(--timing-function);
 }
 
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
-  color: var(--color-accent);
-}
-
-.client-list-link:hover,
-.client-list-link:focus {
-  fill: var(--accent-color);
+  fill: var(--color-accent);
 }
 
 .clients .container {
@@ -606,6 +600,7 @@ img {
   text-transform: uppercase;
   color: var(--color-accent-2);
   margin-bottom: 20px;
+  font-family: var(--main-font);
 }
 
 .footer-social-list-link {
